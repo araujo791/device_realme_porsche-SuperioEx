@@ -15,6 +15,8 @@ echo "Cloning Firmware..."
 git clone --depth=1 https://gitlab.com/kajirokasuna/proprietary_vendor_realme_firmware.git -b uvite-porsche vendor/realme/firmware
 echo "Cloning Oneplus Camera..."
 git clone --depth=1 https://gitlab.com/kajirokasuna/proprietary_vendor_oplus_camera.git -b topaz-porsche vendor/oplus/camera
+echo "kernel-build-tools Fix error openssl/bio.h..."
+git clone https://github.com/PixelExperience-Staging/prebuilts_kernel-build-tools -b fourteen prebuilts/kernel-build-tools
 
 # We wish to ship KernelSU with AtomX Kernel so lets set it up
 echo "Setting Up KernelSU for AtomX Kernel..."
