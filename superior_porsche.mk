@@ -28,15 +28,17 @@ USE_QUICKPIC := false
 USE_DUCKDUCKGO := false
 USE_ViaBrowser := false
 TARGET_BUILD_VIMUSIC := false
+SUPERIOR_MAINTAINER := Covenant_Fuchsia_GT2
+#ro.superior.edition :=
 
 # OTA Assert
 TARGET_OTA_ASSERT_DEVICE := porsche,RE58B2L1,RE52BL1
 
 # Maintainer
-PRODUCT_SYSTEM_PROPERTIES += \
-       ro.spos.maintainer=Covenant_Fuchsia_GT2
+#PRODUCT_SYSTEM_PROPERTIES += \
+#       ro.spos.maintainer=Covenant_Fuchsia_GT2
 
-PRODUCT_NAME := superior_porsche
+PRODUCT_NAME := Covenant_Fuchsia_GT2
 PRODUCT_DEVICE := porsche
 PRODUCT_MANUFACTURER := realme
 PRODUCT_BRAND := realme
@@ -48,11 +50,12 @@ PRODUCT_SYSTEM_DEVICE := RE58B2L1
 PRODUCT_GMS_CLIENTID_BASE := android-oppo
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    PRIVATE_BUILD_DESC="qssi-user 13 TP1A.220905.001 1701695584839 release-keys" \
+    PRIVATE_BUILD_DESC=" 13 RMX3311GDPR_11_C.22_2023122117360111 1701695584839 release-keys" \
     TARGET_DEVICE=$(PRODUCT_SYSTEM_DEVICE) \
     TARGET_PRODUCT=$(PRODUCT_SYSTEM_NAME)
 
-BUILD_FINGERPRINT := realme/RMX3311/RE58B2L1:13/TP1A.220905.001/S.14fda1d_59162-1:user/release-keys
+# Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
+BUILD_FINGERPRINT := realme/RMX3311EEA/RE58B2L1:13/TP1A.220905.001/S.14fda1d_59162-1f9b6:user/release-keys
 
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.build.fingerprint=$(BUILD_FINGERPRINT)
