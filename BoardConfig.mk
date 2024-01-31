@@ -11,7 +11,6 @@ DEVICE_PATH := device/realme/porsche
 
 # Display
 TARGET_SCREEN_DENSITY := 480
-# RELAX_USES_LIBRARY_CHECK=true
 
 
 # HIDL

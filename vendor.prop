@@ -10,4 +10,4 @@ ro.surface_flinger.set_display_power_timer_ms=1000
 persist.radio.multisim.config=dsds
 
 # USB
-#vendor.usb.product_string=realme GT 2
+#vendor.usb.product_string=Covenant Fuchsia GT2
